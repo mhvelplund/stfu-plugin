@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STFU - Manage Muted Sites</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>STFU</h1>
+            <p class="subtitle">Smart Tab Muting</p>
+        </header>
+
+        <div class="add-section">
+            <input type="text" id="newPrefix" placeholder="Enter URL prefix (e.g., https://youtube.com/)"
+                autocomplete="off" />
+            <button id="addButton" class="btn-primary">Add Prefix</button>
+        </div>
+
+        <div class="quick-add-section">
+            <button id="addCurrentButton" class="btn-secondary">Add Current Tab</button>
+        </div>
+
+        <div class="list-section">
+            <h2>Muted URL Prefixes</h2>
+            <div id="prefixList" class="prefix-list">
+                <p class="empty-message">No URL prefixes added yet.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p class="info-text">Tabs matching enabled prefixes will be automatically muted.</p>
+        </footer>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
